@@ -1,0 +1,64 @@
+User Story US1 - Registo de Consumo
+Enquanto Gestor de Operações
+Quero registar o consumo dos clientes
+Para garantir o controlo das cobranças e identificar anomalias
+
+Critérios de Aceitação:
+CA1. Cenário OK - Se o consumo estiver dentro dos padrões normais, o registo é marcado como “Concluído”.
+CA2. Consumo fora do normal - Se o consumo estiver fora dos padrões esperados, um alerta é emitido e o estado do registo fica como “Pendente”.
+CA3. Registo duplicado - Se o consumo já foi registado para aquele período, um alerta impede a duplicação.
+
+
+User Story US2 - Acompanhamento do Estado do Consumo
+Enquanto Cliente Residencial
+Quero visualizar o estado do meu consumo
+Para acompanhar o processamento da minha fatura
+
+Critérios de Aceitação:
+CA1. Cenário OK - O cliente pode visualizar o estado do consumo na aplicação.
+CA2. Consumo sem atualização - Se o consumo estiver pendente por mais de 48 horas, o cliente recebe uma notificação.
+CA3. Falha na exibição - Se houver erro no carregamento dos dados, é apresentada uma mensagem de erro.
+
+
+User Story US3 - Acompanhamento da Disponibilidade de Energia
+Enquanto Gestor de Operações
+Quero monitorizar a disponibilidade de energia em tempo real
+Para garantir a distribuição eficiente da eletricidade
+
+Critérios de Aceitação:
+CA1. Cenário OK - O gestor pode visualizar o estado da rede no painel em tempo real.
+CA2. Falha de comunicação - Se houver perda de dados da rede, o sistema exibe um alerta de falha na monitorização.
+CA3. Alerta ignorado - Se um problema crítico não for reconhecido em 5 minutos, o sistema notifica automaticamente a equipa de manutenção.
+
+
+User Story US4 - Programação de Manutenções
+Enquanto Técnico de Manutenção
+Quero programar manutenções na rede elétrica
+Para garantir a confiabilidade do fornecimento de energia
+
+Critérios de Aceitação:
+CA1. Cenário OK - O técnico pode agendar manutenções e visualizar o histórico de inspeções.
+CA2. Sobrecarga de tarefas - Se houver muitas intervenções no mesmo período, o sistema sugere uma nova data.
+CA3. Notificação atrasada - Se um cliente não for notificado sobre a manutenção, o sistema reenviará a notificação.
+
+
+User Story US5 - Atribuição de Recursos Energéticos
+Enquanto Técnico de Manutenção
+Quero redistribuir recursos energéticos conforme a necessidade
+Para minimizar impactos em caso de falha na rede
+
+Critérios de Aceitação:
+CA1. Cenário OK - O sistema ajusta automaticamente a distribuição de energia para evitar sobrecargas.
+CA2. Falha na redistribuição - Se não houver capacidade suficiente para realocar energia, um alerta é gerado.
+CA3. Intervenção manual necessária - Se o problema não for resolvido automaticamente, o técnico recebe uma ordem de deslocação.
+
+
+User Story US6 - Notificação de Interrupção de Energia
+Enquanto Cliente Residencial
+Quero ser notificado sobre interrupções no fornecimento de energia
+Para poder preparar-me antecipadamente
+
+Critérios de Aceitação:
+CA1. Cenário OK - O cliente recebe uma notificação com detalhes sobre a interrupção.
+CA2. Falha na notificação - Se a notificação não for enviada a tempo, o sistema tenta reenviar ou exibe um alerta na aplicação.
+CA3. Informação desatualizada - Se o tempo estimado de resolução mudar, o cliente recebe uma atualização automática.

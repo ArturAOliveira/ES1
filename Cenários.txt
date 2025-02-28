@@ -1,0 +1,17 @@
+Cenário C1
+O Gestor de Operações, depois de autenticado, insere os dados do consumo lidos do contador do cliente no formulário de registo. O sistema verifica automaticamente se o valor está dentro dos limites normais com base nos últimos 12 meses. Se o consumo estiver dentro dos padrões esperados, o registo é marcado como “Concluído”. Caso contrário, um alerta é exibido ao gestor. O registo de consumo com valores anómalos fica com o estado “Pendente” para posterior verificação.
+
+Cenário C2
+O Cliente Residencial acede à aplicação pelo smartphone e consulta o estado do consumo. Ele pode ver se está “Pendente” (aguardando validação), “Validado” (confirmado e pronto para faturação) ou “Faturado” (valor incluído na fatura). Caso o consumo ainda esteja pendente por mais de 48 horas, o cliente recebe uma notificação informando sobre a demora na validação.
+
+Cenário C3
+O Gestor de Operações acede ao painel de monitorização da rede e verifica o estado da disponibilidade de energia em diferentes áreas. O sistema apresenta um mapa em tempo real, indicando possíveis falhas ou sobrecargas na rede. Caso haja uma queda de energia em determinada região, um alerta visual e sonoro é emitido para facilitar a rápida intervenção da equipa técnica.
+
+Cenário C4
+O Técnico de Manutenção recebe um alerta de que um transformador ultrapassou o tempo recomendado para inspeção. Ele acede ao sistema, verifica o histórico de intervenções e agenda a manutenção para um horário em que cause menor impacto aos clientes. O sistema notifica os clientes afetados sobre a intervenção programada.
+
+Cenário C5
+Uma falha na rede elétrica causa uma sobrecarga numa subestação. O sistema analisa automaticamente as áreas afetadas e redistribui os recursos disponíveis para minimizar a interrupção. O Técnico de Manutenção recebe uma notificação com as instruções para balanceamento da rede e desloca-se ao local para intervenção manual, se necessário.
+
+Cenário C6
+O sistema deteta uma falha inesperada numa linha de distribuição e gera automaticamente notificações para os clientes afetados, informando sobre a interrupção e o tempo estimado de reparação. Um Cliente Residencial recebe a notificação no telemóvel e pode acompanhar o estado da resolução do problema pela aplicação.
